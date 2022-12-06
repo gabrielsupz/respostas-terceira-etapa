@@ -37,16 +37,22 @@ body {
 
   background-repeat: no-repeat;
 }
-nav {
+
+header {
   width: 100%;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav {
   display: flex;
 
   justify-content: space-around;
   align-items: center;
-  margin: auto;
-  padding: 3rem;
 }
-nav div {
+header div {
   width: auto;
   display: flex;
   flex-direction: row;
@@ -57,11 +63,15 @@ nav div {
   font-size: 3rem;
   font-weight: 700;
 }
-
-nav div strong {
+header div p {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+header div strong {
   color: rgb(92, 174, 225);
 }
-nav ul {
+header ul {
   justify-content: center;
   gap: 4rem;
   display: flex;
@@ -70,11 +80,11 @@ nav ul {
   font-size: 2rem;
   font-weight: 700;
 }
-nav a {
+header a {
   text-decoration: none;
   color: var(--color-text);
 }
-nav a:hover {
+header a:hover {
   color: rgb(108, 108, 123);
 }
 
@@ -169,7 +179,7 @@ footer div a:hover {
 }
 
 @media screen and (max-width: 550px) {
-  nav {
+  header {
     flex-direction: column;
   }
 
