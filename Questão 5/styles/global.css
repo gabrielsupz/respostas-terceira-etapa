@@ -177,7 +177,7 @@ footer div a {
 footer div a:hover {
   color: var(--color-text-hover);
 }
-
+/* --- Deixando Responsivo --- */
 @media screen and (max-width: 550px) {
   header {
     flex-direction: column;
